@@ -1,0 +1,6 @@
+.vscode/*
+bin/*
+obj/*
+
+data/output-newton.txt
+data/output-custom.txt
