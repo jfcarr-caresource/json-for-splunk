@@ -90,7 +90,7 @@ namespace SplunkFormatter
 									var lineItemJson = string.Empty;
 									for (int i = 0; i <= fieldList.Count - 1; i++)
 									{
-										lineItemJson += $"\"{columnNames[i]}\":\"{fieldList[i]}\"";
+										lineItemJson += $"\"{columnNames[i]}\":\"{fieldList[i].Replace("\"", "\\\"")}\"";
 										if (i < fieldList.Count - 1) lineItemJson += ",";
 									}
 									lineItemJson = $"{{{lineItemJson}}}";
